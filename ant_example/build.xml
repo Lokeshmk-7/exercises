@@ -1,0 +1,25 @@
+<project>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="D:\Uni\Architecture_Information_Systems\exercises\ant_example\build/classes"/>
+        <javac srcdir="D:\Uni\Architecture_Information_Systems\exercises\ant_example" destdir="D:\Uni\Architecture_Information_Systems\exercises\ant_example/build/classes"/>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="D:\Uni\Architecture_Information_Systems\exercises\ant_example/build/jar"/>
+        <jar destfile="D:\Uni\Architecture_Information_Systems\exercises\ant_example/build/jar/ExampleHash.jar" basedir="D:\Uni\Architecture_Information_Systems\exercises\ant_example/build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="com.cryptoexamples.java.ExampleHash"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="D:\Uni\Architecture_Information_Systems\exercises\ant_example\build\jar/ExampleHash.jar" fork="true"/>
+    </target>
+
+</project>
