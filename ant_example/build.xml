@@ -11,7 +11,7 @@
 
     <target name="jar">
         <mkdir dir="build/jar"/>
-        <jar destfile="build/jar/ExampleHash.jar" basedir="D:\Uni\Architecture_Information_Systems\exercises\ant_example/build/classes">
+        <jar destfile="build/jar/ExampleHash.jar" basedir="build/classes">
             <manifest>
                 <attribute name="Main-Class" value="com.cryptoexamples.java.ExampleHash"/>
             </manifest>
