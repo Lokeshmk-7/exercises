@@ -6,7 +6,7 @@
 
     <target name="compile">
         <mkdir dir="build/classes"/>
-        <javac srcdir="" destdir="build/classes"/>
+        <javac srcdir="/var/lib/jenkins/workspace/AIS_Test/ant_example/" destdir="build/classes"/>
     </target>
 
     <target name="jar">
