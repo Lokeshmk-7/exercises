@@ -43,6 +43,7 @@ public class ExampleHash {
   }
 
   public static void main(String[] args) {
+	// added temporary comment to check the automatic build via jenkins
     demonstrateHash("Text that should be authenticated by comparing the hash of it!");
   }
 }
